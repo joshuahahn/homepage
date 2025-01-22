@@ -1,0 +1,88 @@
+body {
+	width: 100%;
+	background-color: #121212;
+	margin: 0;
+	font-family: "SF Mono", "SFMono-Regular", "San Francisco Mono",
+			"Menlo", "Monaco", "Courier New", monospace;
+}
+
+a {
+	color: skyblue;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    padding-top: 0.5em;
+}
+
+ul li::before {
+	content: "- ";
+	margin-right: 5px;
+}
+
+.layout-container {
+	display: flex;
+	max-width: 100%;
+}
+
+.side-column {
+	flex: 0 0 15%;
+	margin: 1%;
+	vertical-align: top;
+	padding: 15px;
+}
+
+.main-column {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 1%;
+	vertical-align: top;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-box {
+	white-space: pre;
+	font-family: monospace;
+	font-size: 17px;
+	color: white;
+	width: fit-content;
+	margin: 10;
+	padding: 10;
+	max-width: none;
+	color: #c0c0c0;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.nav-link {
+	color: green;
+}
+
+.ignore-pre-white {
+	white-space: pre-line;
+}
+
+.grey-text {
+	color: light-grey;
+}

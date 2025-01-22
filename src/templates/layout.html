@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial=scale=1">
+	<link rel="icon" href="data:,">
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	<title>Joshua Hahn</title>
+</head>
+
+<body>
+	<div class="layout-container">
+		<div class="side-column"></div>
+		<div class="main-column">
+			<div class="navbar">
+				<a href="/"
+					class="nav-link">home</a>
+				<a href="/contributions"
+					class="nav-link">contributions</a>
+				<a href="/album-diary"
+					class="nav-link">album diary</a>
+				<a href="https://github.com/joshuahahn"
+					class="nav-link">github</a>
+			</div>
+			{% block content %}
+			{% endblock %}
+		</div>
+		<div class="side-column"></div>
+	</div>
+</body>
+</html>
