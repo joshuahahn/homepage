@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<script>
+	const data = {{ data | tojson }};
+	const num_albums = data[0];
+	const num_artists = data[1];
+	const num_total = data[2];
+</script>
+
+<body>
+	<div class="text-box">
+This is a list of all the albums that I've listened to since July 2024.
+Since then, I've listened to {{num_albums}} albums from {{num_artists}} artists for
+a total of {{num_total}} times.
+	</div>
+</body>
+
+{% endblock %}
